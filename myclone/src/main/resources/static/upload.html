@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- This html file consists of a file input and a button to upload the file-->
+
+<!--WE DO NOT NEED TO CREATE A GET REQUEST FOR THIS FILE-->
+<!--Spring boot automatically creates the URL-->
+<h2>Photo Upload</h2>
+
+<input id="fileupload" type="file" name="fileupload" />
+<button id="upload-button" onclick="uploadFile()"> Upload </button>
+
+<!-- In this case we input the file and the script handles it as formData and POSTs it to localhost:8080/photoz. We are not handling JSON anymore, instead we are now letting the browser send a file. The browser will now send the data and also the filename-->
+
+<!--This is a key:value pair: formData.append("data", fileupload.files[0]);-->
+<!--It means that we are uploading the file under the key "data"-->
+<script>
+
+    async function uploadFile() {
+        let formData = new FormData();
+        formData.append("data", fileupload.files[0]);
+        await fetch('http://localhost:8080/photoz/', {
+            method: "POST",
+            body: formData
+        }).then(result =>    result.text())
+            .then(text => alert(text));
+    }
+</script>
+</body>
+</html>
