@@ -15,10 +15,13 @@ body {
     padding-left: 50px;
 }
 
-/* .logo-wrapper {
-    display: flex;
-    padding-left: 20px;
-} */
+.logoLink {
+    text-decoration: none;
+}
+
+.logoLink:visited {
+    color: white;
+}
 
 .stylish {
     font-weight: bold;
