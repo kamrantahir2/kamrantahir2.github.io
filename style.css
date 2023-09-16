@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    background-color: #555555;
+    position: fixed;
+    display: flex;
+    height: 10px;
+    width: 100%;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+nav * {
+    display: inline;
+    
+}
+
+nav li {
+    padding: 5px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1em;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
