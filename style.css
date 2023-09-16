@@ -1,5 +1,10 @@
+
+
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .navbar {
@@ -32,6 +37,10 @@ body {
     color: #ea4f4c;
 }
 
+.logoWrapper {
+    font-size: 20px;
+}
+
 .navigation {
     list-style-type: none;
     display: flex;
@@ -51,10 +60,49 @@ body {
     color: #ea4f4c;
 }
 
-
-
-header {
-    position: relative;
-    top: 80px;
-    text-align: center;
+.profile-pic {
+    width: 320px;
+    border-radius: 200px;
+    margin-left: 50px;
+    float: left;
+    margin-right: 100px;
 }
+
+.main-section {
+    margin-top: 50px;
+}
+
+.header {
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.about-me {
+    display: block;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.beside-profile-pic {
+    text-align: center;
+    margin-right: 250px;
+    margin-bottom: 100px;
+}
+
+.about-me-text {
+    font-size: 18px;
+}
+
+.about-me-div {
+    display: inline;
+    /* text-decoration: underline; */
+}
+
+html {
+    margin-bottom: 75px;
+}
+
+/* .footer{
+    display: block;
+    margin: 100px; 
+} */
