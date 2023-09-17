@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kamran Tahir - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/kamrantahir2.github.io/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -30,12 +31,36 @@
         </ul>
     </nav>
 
+    <nav class="mobile-navbar">
+        <div class="topnav">
+            <a href="index.html" class="active">
+                <span id="nav-logo-stylish" class="stylish">Kamran</span>
+                <span class="logo">Tahir</span>
+            </a>
+            <div id="mobile-links">
+                <a class="mobile" href="mealPlanner.html">Meal Planner API</a>
+                <a class="mobile" href="tillRecords.html">Till Records</a>
+                <a class="mobile" href="mealPlanner.html">Library Management REST Service</a>
+                <a class="mobile" href="mealPlanner.html">Cinema REST Service</a>
+                <a class="mobile" href="mealPlanner.html">Cashing Up Program V2</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
             <h1 class="header"><span class="stylish">Kamran</span> <span class="logo">Tahir</span></h1>
             
             <h2 class="about-me">About <div class="logo about-me-div">Me</span></h2>
 
     <header class="main-section">
-        <img src="./images/LinkdInPic.jpg" alt="Profile Pic" class="profile-pic">
+        <div class="profile-pic-div">
+            <img src="./images/LinkdInPic.jpg" alt="Profile Pic" class="profile-pic">
+        </div>
+        
         
 
 
@@ -49,7 +74,7 @@
                 for example, in my latest project, Till Records, I am taking a major step forward and learning front-end development to become a fullstack developer. To do this i have built an API using Spring Boot and PostgreSQL as well as JUnit for Test Driven Development. With this API built, I am now in the process of learning both React and Angular, one of which will be incorporated into this project to serve as a frontend.
             </p>
             <br>
-            <p class="about-me-text">
+            <p class="about-me-text second-paragraph">
                 My driving force for learning frontend development comes from my journey in being self-taught. As a self-taught developer, the biggest driving force for me is personal projects. When I have an idea I want to realise that idea from start to finish. Previously, I used JavaFX for the frontend but I want this further and begin creating enterprise-level frontends. To help me achieve this I have enrolled in Codecademy's Pro subscription and I am currently in the process of gaining a professional certificate in frontend development.
             </p>
         </section>
@@ -128,5 +153,7 @@
 
     <footer class="footer"></footer>
 
+
+    <script src="app,js"></script>
 </body>
 </html>
