@@ -249,10 +249,11 @@ html {
 
     .beside-profile-pic {
         margin-top: 20px;
-        /* text-align: center; */
-        min-width:min-content;
-        margin: 0;
-        /* width: 300px; */
+
+    }
+    
+    .about-me-text {
+        text-align: left;
     }
     
 
