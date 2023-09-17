@@ -20,6 +20,10 @@ body {
     padding-left: 50px;
 }
 
+#nav-logo-stylish {
+    color: white;
+}
+
 .logoLink {
     text-decoration: none;
 }
@@ -61,11 +65,13 @@ body {
 }
 
 .profile-pic {
-    width: 320px;
+    /* position: inline; */
+    width: 200px;
     border-radius: 200px;
     margin-left: 50px;
     float: left;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    margin-top: -50px;
 }
 
 .main-section {
@@ -73,24 +79,35 @@ body {
 }
 
 .header {
+    margin-top: 75px;
     margin-bottom: 50px;
     font-size: 3em;
+    text-align: center;
 }
 
 .about-me {
-    display: block;
+    /* display: block; */
+    text-align: center;
     font-size: 2em;
     text-decoration: underline;
 }
 
 .beside-profile-pic {
-    text-align: center;
-    margin-right: 250px;
-    margin-bottom: 100px;
+    position: relative;
+    width: 75%;
+    /* margin-bottom: 100px; */
+    left: 100px;
+    top: 50px;
+    /* display:flex; */
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .about-me-text {
+    text-align: center;
+    margin: 0 auto;
     font-size: 18px;
+    /* padding-left: 50px; */
 }
 
 .about-me-div {
@@ -102,7 +119,56 @@ html {
     margin-bottom: 75px;
 }
 
-/* .footer{
-    display: block;
-    margin: 100px; 
-} */
+.card {
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    width: 25%;
+    /* align-items: center; */
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px 10px;
+    border-radius: 10px;
+    /* background-color: #eeeeee; */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    /* text-align: center; */
+}
+
+.card-picture {
+    /* margin-top: 15px; */
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-description {
+    text-align: left;
+}
+
+.card-link {
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-columns: 300px;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+
+.my-projects {
+    margin-top: 100px;
+}
+
+.projects-header {
+    /* left: -140px; */
+    /* text-align: center; */
+}
