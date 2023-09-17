@@ -220,6 +220,7 @@ html {
 
     .topnav {
         display: block;
+        margin-bottom: 30px;
     }
 
     .navbar {
