@@ -243,6 +243,36 @@ html {
     width: 75%;
 }
 
+.container {
+    margin-top: 50px;
+}
+
+
+.first-photo {
+    background: url(./images/MealPlannerBodyPics/addMeals.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.second-photo {
+    background: url(./images/MealPlannerBodyPics/plannedMeals.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.third-photo {
+    background: url(./images/MealPlannerBodyPics/shoppingList.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.mobile {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
     .topnav {
@@ -289,6 +319,30 @@ html {
 
     body {
         margin-bottom: 100px;
+    }
+
+    .first-photo {
+        min-height: 350px;
+    }
+
+    .second-photo {
+        min-height: 350px;
+    }
+
+    .third-photo {
+        min-height: 350px;
+    }
+
+    .mycontent {
+        padding: 0 4%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 
 }
