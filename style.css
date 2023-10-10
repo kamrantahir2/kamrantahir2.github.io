@@ -298,6 +298,15 @@ html {
     text-decoration: underline;
 }
 
+.github-link {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.github-link:hover {
+    color: #ea4f4c;
+}
+
 @media screen and (max-width: 768px) {
 
     .topnav {
@@ -368,6 +377,11 @@ html {
 
     .desktop {
         display: none;
+    }
+
+    .github-link {
+        font-size: 20px;
+        word-break: break-all;
     }
 
 }
