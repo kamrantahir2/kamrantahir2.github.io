@@ -450,6 +450,14 @@ html {
         margin-top: -50px;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-auto-columns: 300px;
+        column-gap: 100px;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
