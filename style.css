@@ -176,9 +176,6 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-title {
-    /* text-align: center; */
-}
 
 .card-picture {
     /* margin-top: 15px; */
@@ -190,8 +187,6 @@ html {
 .card-description {
     text-align: left;
 }
-
-.card-link {}
 
 .grid-container {
     display: grid;
@@ -216,6 +211,14 @@ html {
 .jumbotron {
     width: 100%;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-out-more-jumbotron {
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +369,6 @@ html {
 }
 
 
-
 @media screen and (max-width: 768px) {
 
     .topnav {
@@ -442,6 +444,10 @@ html {
     .github-link {
         font-size: 20px;
         word-break: break-all;
+    }
+
+    .find-out-more-main-section {
+        margin-top: -50px;
     }
 
 }
