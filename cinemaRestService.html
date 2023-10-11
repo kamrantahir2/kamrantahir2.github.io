@@ -31,8 +31,8 @@
 
         <ul class="navigation">
             <li class="parent"><a href="./mealPlanner.html">Meal Planner API</a></li>
-            <li class="parent"><a href="./cashingUpProgram.html">Cashing Up Program</a></li>
             <li class="parent"><a href="./cinemaRestService.html">Cinema REST Service</a></li>
+            <li class="parent"><a href="./cashingUpProgram.html">Cashing Up Program</a></li>
         </ul>
     </nav>
 
@@ -44,7 +44,7 @@
             </a>
             <div id="mobile-links">
                 <a class="mobile" href="mealPlanner.html">Meal Planner API</a>
-                <a class="mobile" href="mealPlanner.html">Cinema REST Service</a>
+                <a class="mobile" href="cinemaRestService.html">Cinema REST Service</a>
                 <a class="mobile" href="cashingUpProgram.html">Cashing Up Program</a>
             </div>
 
@@ -58,12 +58,12 @@
     <header>
 
         <div class="jumbotron">
-            <h1 class="project-title">Meal Planner <span class="project-name">API</span></h1>
+            <h1 class="project-title">Cinema <span class="project-name">REST Service</span></h1>
         </div>
     </header>
 
     <div class="project-pic-div">
-        <img src="./images/mealPlanning.jpg" alt="Profile Pic" class="project-pic">
+        <img src="./images/CinemaRoomPics/headerPic.jpg" alt="Profile Pic" class="project-pic">
     </div>
 
 
@@ -73,23 +73,21 @@
         <section class="beside-profile-pic">
 
             <p class="about-me-text project-description">
-                Meal Planner API is an API built using Java and SQL for data persistence. This API allows the user to
-                add their favourite meals to a database as well as the ingredients required. These meals will be added
-                to an SQL database using the Statement function to execute SQL statements.
+                Cinema REST Service is an API built to be used by cinema theatres. This API allows the user to create a
+                cinema room based on the number of rows and seats per row requested by the user. The seats can be viewed
+                through a /seats GET endpoint and purchased through a /purchase POST endpoint with a seat object body
+                and can be returned through a /return endpoint. Once the user purchases a ticket the stats section of
+                the /seats JSON is updated to show the total earnings and percentage of seats booked.
             </p>
             <br>
             <p class="about-me-text project-description">
-                Once the user has added their
-                favourite meals, the API will
-                then ask the user to
-                select their breakfast, lunch and dinner meals for each day of the week. Once this is done the API will
-                then create a shopping list as a .txt file including every ingredient required for every meal for the
-                week.
+                <span class="tools-used">Skills:</span> Java, Spring Boot, Spring Web, PostgreSQL, RESTful API.
             </p>
             <br>
             <p class="about-me-text project-description">
-                Find out more- <a href="https://github.com/kamrantahir2/MealPlanner"
-                    class="github-link">https://github.com/kamrantahir2/MealPlanner</a>
+                <span class="tools-used">Find out more</span>- <a
+                    href="https://github.com/kamrantahir2/CinemaRESTService"
+                    class="github-link">https://github.com/kamrantahir2/CinemaRESTService</a>
             </p>
         </section>
 
@@ -106,14 +104,13 @@
 
     <div class="container">
         <div class="row flex-row">
-            <div class="col-md-6 first-photo">
+            <div class="col-md-6 cinema-pic-1">
 
             </div>
 
             <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
-                <p>To begin, the user inputs various meals and their ingredients which will then be added to a
-                    PostgreSQL database. Once the user is happy with the variety of meals they can then begin to plan
-                    their meals for the week.</p>
+                <p>Once the user has determined how many rows and seats per row they want, a database will be created to
+                    keep track of all seats, their price and their booked status.</p>
             </div>
 
 
@@ -123,12 +120,12 @@
     <div class="container desktop">
         <div class="row flex-row">
             <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
-                <p>The API will prompt the user to select their meals for breakfast, lunch and dinner for the entire
-                    week and save the results to another table in our database. The meal plan for the week will then be
-                    printed and if the user is happy they can then save their meal plan.</p>
+                <p>The user can book seats by sending a POST request to the /purchase endpoint with a seat object as the
+                    body. If the seat is available a 200 OK status will be returned and the booked status of the seat
+                    will be set to false in the database.</p>
             </div>
 
-            <div class="col-md-6 photo second-photo">
+            <div class="col-md-6 photo cinema-pic-2">
 
             </div>
         </div>
@@ -136,13 +133,13 @@
 
     <div class="container mobile">
         <div class="row flex-row">
-            <div class="col-md-6 photo second-photo">
+            <div class="col-md-6 photo cinema-pic-2">
 
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
-                <p>The API will prompt the user to select their meals for breakfast, lunch and dinner for the entire
-                    week and save the results to another table in our database. The meal plan for the week will then be
-                    printed and if the user is happy they can then save their meal plan.</p>
+                <p>The user can book seats by sending a POST request to the /purchase endpoint with a seat object as the
+                    body. If the seat is available a 200 OK status will be returned and the booked status of the seat
+                    will be set to false in the database.</p>
             </div>
 
 
@@ -151,17 +148,21 @@
 
     <div class="container">
         <div class="row flex-row">
-            <div class="col-md-6 photo third-photo">
+            <div class="col-md-6 photo cinema-pic-3">
 
             </div>
 
             <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
-                <p>Once the user has saved their meal plan, the API will loop through the Plan table in the database and
-                    add the ingredients for each meal to a shopping list.</p>
+                <p>Once the seat has been purchased the statistics will be updated to reflect the current earnings and
+                    percentage of seats booked.</p>
             </div>
 
 
         </div>
+    </div>
+
+    <div class="divider">
+        <div class="closing-bar bar"></div>
     </div>
 
     <script src="app,js"></script>

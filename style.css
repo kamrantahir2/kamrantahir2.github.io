@@ -237,6 +237,8 @@ html {
 
 .project-pic {
     width: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .project-description {
@@ -245,6 +247,10 @@ html {
 
 .container {
     margin-top: 50px;
+}
+
+.tools-used {
+    font-weight: bold;
 }
 
 
@@ -287,10 +293,15 @@ html {
 }
 
 .bar {
-    height: 10px;
+    height: 2.5px;
     width: 33%;
     background-color: #000;
     border-radius: 100px;
+}
+
+.closing-bar {
+
+    margin-bottom: -100px;
 }
 
 .showcase {
@@ -306,6 +317,34 @@ html {
 .github-link:hover {
     color: #ea4f4c;
 }
+
+
+.cinema-pic-1 {
+    background: url(./images/CinemaRoomPics/databaseShowingAllSeats.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+.cinema-pic-2 {
+    background: url(./images/CinemaRoomPics/postmanShowingSuccessfulPurchase.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+.cinema-pic-3 {
+    background: url(./images/CinemaRoomPics/jsonShowingStatsChanged.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
 
