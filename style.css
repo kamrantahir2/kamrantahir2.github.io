@@ -344,6 +344,27 @@ html {
 }
 
 
+.cashing-pic-1 {
+    background: url(./images/CashingUpProgram/showingNumberOfCoinsInputted.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.cashing-pic-2 {
+    background: url(./images/CashingUpProgram/showingTotalCalculated.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.cashing-pic-3 {
+    background: url(./images/CashingUpProgram/showingExpectedAndPlusMinus.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -441,5 +462,30 @@ html {
     .mycontent {
         margin-top: 20px;
         padding: 0 4%;
+    }
+
+    .cinema-pic-1 {
+        min-height: 350px;
+    }
+
+    .cinema-pic-2 {
+        min-height: 350px;
+    }
+
+    .cinema-pic-3 {
+        min-height: 350px;
+    }
+
+
+    .cashing-pic-1 {
+        min-height: 350px;
+    }
+
+    .cashing-pic-2 {
+        min-height: 350px;
+    }
+
+    .cashing-pic-3 {
+        min-height: 350px;
     }
 }
