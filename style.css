@@ -461,6 +461,10 @@ html {
     .jumbotron {
         text-align: center;
     }
+    
+    .project-pic {
+        width: 300px;
+    }
 
 }
 
