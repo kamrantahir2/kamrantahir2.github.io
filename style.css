@@ -1,0 +1,509 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #222;
+    position: relative;
+    display: none;
+
+}
+
+.topnav #mobile-links {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav .icon:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.mobile:hover {
+    color: #ea4f4c;
+    transition: 0.5s;
+}
+
+
+.navbar {
+    /* background-color: #cccccc; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    padding-left: 50px;
+}
+
+#nav-logo-stylish {
+    color: white;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.logoLink:visited {
+    color: white;
+}
+
+.stylish {
+    font-weight: bold;
+}
+
+.logo {
+    padding-left: 4px;
+    color: #ea4f4c;
+}
+
+.logoWrapper {
+    font-size: 20px;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+}
+
+.parent a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.parent {
+    padding: 0 10px;
+}
+
+.parent a:hover {
+    color: #ea4f4c;
+}
+
+.profile-pic {
+    /* position: inline; */
+    width: 200px;
+    border-radius: 200px;
+    margin-left: 50px;
+    float: left;
+    /* margin-right: 100px; */
+    margin-top: -50px;
+}
+
+.main-section {
+    margin-top: 50px;
+}
+
+.header {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.about-me {
+    /* display: block; */
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.beside-profile-pic {
+    position: relative;
+    width: 85%;
+    /* margin-bottom: 100px; */
+    left: 100px;
+    /* top: 50px; */
+    /* display:flex; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.about-me-text {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 21px;
+    /* padding-left: 50px; */
+}
+
+.about-me-div {
+    display: inline;
+    /* text-decoration: underline; */
+}
+
+html {
+    margin-bottom: 75px;
+}
+
+.card {
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    width: 25%;
+    /* align-items: center; */
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px 10px;
+    border-radius: 10px;
+    /* background-color: #eeeeee; */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.card-picture {
+    /* margin-top: 15px; */
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-description {
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-columns: 300px;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+
+.my-projects {
+    margin-top: 100px;
+}
+
+.projects-header {
+    /* left: -140px; */
+    /* text-align: center; */
+    padding-top: -1000px;
+}
+
+
+.jumbotron {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-out-more-jumbotron {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 40px;
+    color: black;
+    text-decoration: underline;
+}
+
+.project-name {
+    color: #ea4f4c;
+}
+
+.project-pic-div {
+    text-align: center;
+}
+
+.project-pic {
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    width: 75%;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.tools-used {
+    font-weight: bold;
+}
+
+
+.first-photo {
+    background: url(./images/MealPlannerBodyPics/addMeals.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.second-photo {
+    background: url(./images/MealPlannerBodyPics/plannedMeals.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.third-photo {
+    background: url(./images/MealPlannerBodyPics/shoppingList.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+.mycontent {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.divider {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    height: 2.5px;
+    width: 33%;
+    background-color: #000;
+    border-radius: 100px;
+}
+
+.closing-bar {
+
+    margin-bottom: -100px;
+}
+
+.showcase {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.github-link {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.github-link:hover {
+    color: #ea4f4c;
+}
+
+
+.cinema-pic-1 {
+    background: url(./images/CinemaRoomPics/databaseShowingAllSeats.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+.cinema-pic-2 {
+    background: url(./images/CinemaRoomPics/postmanShowingSuccessfulPurchase.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+.cinema-pic-3 {
+    background: url(./images/CinemaRoomPics/jsonShowingStatsChanged.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+    border: 2px solid black;
+}
+
+
+.cashing-pic-1 {
+    background: url(./images/CashingUpProgram/showingNumberOfCoinsInputted.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.cashing-pic-2 {
+    background: url(./images/CashingUpProgram/showingTotalCalculated.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+.cashing-pic-3 {
+    background: url(./images/CashingUpProgram/showingExpectedAndPlusMinus.png) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: 50% 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .topnav {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navigation {
+        min-width: 100%;
+    }
+
+    .profile-pic {
+        /* text-align: center; */
+        min-width: 100px;
+        float: none;
+        margin: 0;
+    }
+
+    .header {
+        margin: auto;
+    }
+
+    .profile-pic-div {
+        display: relative;
+        text-align: center;
+        /* background-color: red; */
+    }
+
+    .beside-profile-pic {
+        margin-top: 20px;
+        width: 100%;
+        left: 0;
+        /* padding: 20px; */
+    }
+
+    .about-me-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    body {
+        margin-bottom: 100px;
+    }
+
+    .first-photo {
+        min-height: 350px;
+    }
+
+    .second-photo {
+        min-height: 350px;
+    }
+
+    .third-photo {
+        min-height: 350px;
+    }
+
+    .mycontent {
+        padding: 0 4%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .github-link {
+        font-size: 20px;
+        word-break: break-all;
+    }
+
+    .find-out-more-main-section {
+        margin-top: -50px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-auto-columns: 300px;
+        column-gap: 100px;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .first-photo {
+        min-height: 350px;
+    }
+
+    .second-photo {
+        min-height: 350px;
+    }
+
+    .third-photo {
+        min-height: 350px;
+    }
+
+    .mycontent {
+        margin-top: 20px;
+        padding: 0 4%;
+    }
+
+    .cinema-pic-1 {
+        min-height: 350px;
+    }
+
+    .cinema-pic-2 {
+        min-height: 350px;
+    }
+
+    .cinema-pic-3 {
+        min-height: 350px;
+    }
+
+
+    .cashing-pic-1 {
+        min-height: 350px;
+    }
+
+    .cashing-pic-2 {
+        min-height: 350px;
+    }
+
+    .cashing-pic-3 {
+        min-height: 350px;
+    }
+}

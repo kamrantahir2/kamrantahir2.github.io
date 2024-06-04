@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBNKPWXT01"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WBNKPWXT01');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Kamran Tahir - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="./index.html" class="logoLink">
+            <div class="logoWrapper">
+                <span id="nav-logo-stylish" class="stylish">Kamran</span>
+                <span class="logo">Tahir</span>
+            </div>
+        </a>
+
+        <ul class="navigation">
+            <li class="parent"><a href="./mealPlanner.html">Meal Planner API</a></li>
+            <li class="parent"><a href="./cashingUpProgram.html">Cashing Up Program</a></li>
+            <li class="parent"><a href="./cinemaRestService.html">Cinema REST Service</a></li>
+            <li class="parent"><a href="./findOutMore.html">Find Out More</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile-navbar">
+        <div class="topnav">
+            <a href="index.html" class="active">
+                <span id="nav-logo-stylish" class="stylish">Kamran</span>
+                <span class="logo">Tahir</span>
+            </a>
+            <div id="mobile-links">
+                <a class="mobile" href="mealPlanner.html">Meal Planner API</a>
+                <a class="mobile" href="cinemaRestService.html">Cinema REST Service</a>
+                <a class="mobile" href="cashingUpProgram.html">Cashing Up Program</a>
+                <a class="mobile" href="findOutMore.html">Find Out More</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <header>
+
+        <div class="jumbotron">
+            <h1 class="project-title">Cinema <span class="project-name">REST Service</span></h1>
+        </div>
+    </header>
+
+    <div class="project-pic-div">
+        <img src="./images/CinemaRoomPics/headerPic.jpg" alt="Profile Pic" class="project-pic">
+    </div>
+
+
+    <main class="main-section">
+
+
+        <section class="beside-profile-pic">
+
+            <p class="about-me-text project-description">
+                Cinema REST Service is an API built to be used by cinema theatres. This API allows the user to create a
+                cinema room based on the number of rows and seats per row requested by the user. The seats can be viewed
+                through a /seats GET endpoint and purchased through a /purchase POST endpoint with a seat object body
+                and can be returned through a /return endpoint. Once the user purchases a ticket the stats section of
+                the /seats JSON is updated to show the total earnings and percentage of seats booked.
+            </p>
+            <br>
+            <p class="about-me-text project-description">
+                <span class="tools-used">Skills:</span> Java, Spring Boot, Spring Web, PostgreSQL, RESTful API.
+            </p>
+            <br>
+            <p class="about-me-text project-description">
+                <span class="tools-used">Find out more</span>- <a
+                    href="https://github.com/kamrantahir2/CinemaRESTService"
+                    class="github-link">https://github.com/kamrantahir2/CinemaRESTService</a>
+            </p>
+        </section>
+
+
+    </main>
+
+    <div class="divider">
+        <div class="bar"></div>
+    </div>
+
+    <div class="divider">
+        <h2 class="showcase">Project <span class="project-name">Showcase</span></h2>
+    </div>
+
+    <div class="container">
+        <div class="row flex-row">
+            <div class="col-md-6 cinema-pic-1">
+
+            </div>
+
+            <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
+                <p>Once the user has determined how many rows and seats per row they want, a database will be created to
+                    keep track of all seats, their price and their booked status.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container desktop">
+        <div class="row flex-row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
+                <p>The user can book seats by sending a POST request to the /purchase endpoint with a seat object as the
+                    body. If the seat is available a 200 OK status will be returned and the booked status of the seat
+                    will be set to false in the database.</p>
+            </div>
+
+            <div class="col-md-6 photo cinema-pic-2">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mobile">
+        <div class="row flex-row">
+            <div class="col-md-6 photo cinema-pic-2">
+
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
+                <p>The user can book seats by sending a POST request to the /purchase endpoint with a seat object as the
+                    body. If the seat is available a 200 OK status will be returned and the booked status of the seat
+                    will be set to false in the database.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row flex-row">
+            <div class="col-md-6 photo cinema-pic-3">
+
+            </div>
+
+            <div class="col-md-6 d-flex align-items-center justify-content-center mycontent">
+                <p>Once the seat has been purchased the statistics will be updated to reflect the current earnings and
+                    percentage of seats booked.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="divider">
+        <div class="closing-bar bar"></div>
+    </div>
+
+    <script src="app,js"></script>
+</body>
+
+</html>

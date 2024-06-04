@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBNKPWXT01"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WBNKPWXT01');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Kamran Tahir - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="./index.html" class="logoLink">
+            <div class="logoWrapper">
+                <span id="nav-logo-stylish" class="stylish">Kamran</span>
+                <span class="logo">Tahir</span>
+            </div>
+        </a>
+
+        <ul class="navigation">
+            <li class="parent"><a href="./mealPlanner.html">Meal Planner API</a></li>
+            <li class="parent"><a href="./cashingUpProgram.html">Cashing Up Program</a></li>
+            <li class="parent"><a href="./cinemaRestService.html">Cinema REST Service</a></li>
+            <li class="parent"><a href="./findOutMore.html">Find Out More</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile-navbar">
+        <div class="topnav">
+            <a href="index.html" class="active">
+                <span id="nav-logo-stylish" class="stylish">Kamran</span>
+                <span class="logo">Tahir</span>
+            </a>
+            <div id="mobile-links">
+                <a class="mobile" href="mealPlanner.html">Meal Planner API</a>
+                <a class="mobile" href="cinemaRestService.html">Cinema REST Service</a>
+                <a class="mobile" href="cashingUpProgram.html">Cashing Up Program</a>
+                <a class="mobile" href="findOutMore.html">Find Out More</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <h1 class="header"><span class="stylish">Kamran</span> <span class="logo">Tahir</span></h1>
+
+    <h2 class="about-me">About <div class="logo about-me-div">Me</span></h2>
+
+    <header class="main-section">
+        <div class="profile-pic-div">
+            <img src="./images/LinkdInPic.jpg" alt="Profile Pic" class="profile-pic">
+        </div>
+
+
+
+
+        <section class="beside-profile-pic">
+
+            <p class="about-me-text">
+                I am a self-taught developer with a passion for learning and problem solving. I have created
+                numerous projects such as APIs and real-world applications. My current skills include Java, Spring Boot,
+                SQL, Test
+                Driven Development, JUnit, JavaFX, PostgreSQL, JSON, RESTful APIs & HTTP Requests (although this is
+                ever-changing). Constantly looking to expand my
+                knowledge is a major aspect in my growth as a developer. I learn and incorporate something new in each
+                of my projects,
+                for example, in my latest project, Till Records, I am taking a major step forward and learning front-end
+                development to become a fullstack developer. To do this i have built an API using Spring Boot and
+                PostgreSQL as well as JUnit for Test Driven Development. With this API built, I am now in the process of
+                learning both React and Angular, one of which will be incorporated into this project to serve as a
+                frontend.
+            </p>
+            <br>
+            <p class="about-me-text second-paragraph">
+                My driving force for learning frontend development comes from my journey in being self-taught. As a
+                self-taught developer, the biggest driving force for me is personal projects. When I have an idea I want
+                to realise that idea from start to finish. Previously, I used JavaFX for the frontend but I want this
+                further and begin creating enterprise-level frontends. To help me achieve this I have enrolled in
+                Codecademy's Pro subscription and I am currently in the process of gaining a professional certificate in
+                frontend development.
+            </p>
+        </section>
+
+
+    </header>
+
+    <div class="my-projects">
+        <h3 class="projects-header about-me">My <span class="logo">Projects</span></h3>
+    </div>
+
+
+    <div class="grid-container">
+
+        <section class="card">
+            <img src="./images/mealPlanning.jpg" alt="Picture of meals in containers" class="card-picture">
+            <div class="container">
+                <h4 class="card-title">
+                    Meal Planner API
+                </h4>
+                <p class="card-description">
+                    This API stores meals and ingredients in a database. Once the user has selected their meals for the
+                    week,
+                    the ingredients required will be saved to a shopping list.
+                </p>
+                <a href="./mealPlanner.html" class="card-link"><button class="card-btn">Learn More</button></a>
+
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="./images/cinema.jpg" alt="cinema" class="card-picture">
+            <div class="container">
+                <h4 class="card-title">
+                    Cinema REST Service
+                </h4>
+                <p class="card-description">
+                    This API allows the user to create a cinema room then book and refund tickets.
+                </p>
+                <a href="./cinemaRestService.html" class="card-link"><button class="card-btn">Learn More</button></a>
+
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="./images/tillRecords.jpg" alt="Picture of a card machine" class="card-picture">
+            <div class="container">
+                <h4 class="card-title">
+                    Cashing Up Program
+                </h4>
+                <p class="card-description">
+                    This program helps speed up the cashing up process for shop owners.
+                </p>
+                <a href="./cashingUpProgram.html" class="card-link"><button class="card-btn">Learn More</button></a>
+
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+
+
+    <footer class="footer"></footer>
+
+
+    <script src="app,js"></script>
+</body>
+
+</html>
